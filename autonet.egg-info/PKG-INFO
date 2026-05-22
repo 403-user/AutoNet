@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: autonet
+Version: 0.1.0
+Summary: Network vulnerability scanner with layered discovery, enumeration, and CVE matching
+Requires-Python: >=3.10
+Requires-Dist: python-nmap>=0.7.0
+Requires-Dist: scapy>=2.5.0
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: pandas>=2.0.0

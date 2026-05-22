@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonet"
+version = "0.1.0"
+description = "Network vulnerability scanner with layered discovery, enumeration, and CVE matching"
+requires-python = ">=3.10"
+dependencies = [
+    "python-nmap>=0.7.0",
+    "scapy>=2.5.0",
+    "aiohttp>=3.9.0",
+    "pandas>=2.0.0",
+]
+
+[project.scripts]
+autonet = "autonet.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["autonet*"]
